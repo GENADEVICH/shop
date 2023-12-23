@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Signika:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/main/css/index.css">
+    <title>Главная</title>
+</head>
+<body>
+    <div class="contener">
+        <div class='logo'>
+            <img class="logoimg" src="static/main/icons/Vector.png">
+            <a id="logotext">Marnie</a>
+            <a id="textlogo" href="{% url 'proddog' %}">Меню рациона</a>
+            <a id="textglav" href="{% url 'index' %}">Главная</a>
+            <a id="textotziv" href="{% url 'reviews' %}">Отзывы</a>
+            <a id="textzakaz" href="{% url 'order' %}">Заказать</a>
+            <a href=""><img class="imgbasket" src="static/main/icons/basket.svg"></a>
+        </div>
+        <div class="main">
+            <a id="textaglav">Натуральный корм для счастливых питомцев</a>
+            <a id="textadobav">Сохраняем здоровье и энергию вашим животных и вас</a>
+            <button type="button" id="perexod" onClick='location.href="{% url 'proddog' %}"'>Выбрать рацион</button>
+            <img class="imgellips"  src="static/main/img/Ellips.png">
+            <img class="imgsobaka"  src="static/main/img/pngwing.png">
+        </div>
+    </div>
+</body>
+</html>

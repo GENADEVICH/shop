@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Signika:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/main/css/prodcat.css">
+    <title>Кошкам</title>
+</head>
+<body>
+    <div class="contener">
+        <div class='logo'>
+            <img class="logoimg" src="static/main/icons/Vector.png">
+            <a id="logotext">Marnie</a>
+            <a id="textlogo" href="{% url 'proddog' %}">Меню рациона</a>
+            <a id="textglav" href="{% url 'index' %}">Главная</a>
+            <a id="textotziv" href="{% url 'reviews' %}">Отзывы</a>
+            <a id="textzakaz" href="{% url 'order' %}">Заказать</a>
+            <a href="index1.html"><img class="imgbasket" src="static/main/icons/basket.svg"></a>
+        </div>
+
+        <div class="main">
+            <a id="textrazion">Рацион на  каждый день</a>
+            <button type="button" class="rectangle" id="textknop" onClick='location.href="{% url 'proddog' %}"'>Для собак</button>
+            <button type="button" class="rectangle1" id="textknop" onClick='location.href="{% url 'gprodcat' %}"'>Для кошек</button>
+            <button type="button" class="rectangle2" id="textknoperp" onClick='location.href="{% url 'prodbird' %}"'>Для пернатых</button>
+            <button type="button" class="rectangle3" id="textknopgriz" onClick='location.href="{% url 'prodgriz' %}"'>Для грызунов</button>
+
+            <div class="frame">
+                <img class="imgframe" src="static/main/img/image3.png">
+                <a id="textframe">Корм длячувствительных кошек </a>
+                <a id="priceframe">4999 ₽</a>
+                <img class="arrow" src="static/main/icons/arrow.svg">
+            </div>
+
+            <div class="frame1">
+                <img class="imgframe" src="static/main/img/image4.png">
+                <a id="textframe">Корм для кошек-приверед </a>
+                <a id="priceframe">9300 ₽</a>
+                <img class="arrow" src="static/main/icons/arrow.svg">
+            </div>
+
+            <div class="frame2">
+                <img class="imgframe" src="static/main/img/image5.png">
+                <a id="textframe">Корм для котят мейн-куна </a>
+                <a id="priceframe">9930 ₽</a>
+                <img class="arrow" src="static/main/icons/arrow.svg">
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

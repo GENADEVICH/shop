@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Signika:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/main/css/reviews.css">
+    <title>Отзывы</title>
+</head>
+<body>
+    <div class="contener">
+        <div class='logo'>
+            <img class="logoimg" src="static/main/icons/Vector.png">
+            <a id="logotext">Marnie</a>
+            <a id="textlogo" href="{% url 'proddog' %}">Меню рациона</a>
+            <a id="textglav" href="{% url 'index' %}">Главная</a>
+            <a id="textotziv" href="{% url 'reviews' %}">Отзывы</a>
+            <a id="textzakaz" href="{% url 'order' %}">Заказать</a>
+            <a href="index1.html"><img class="imgbasket" src="static/main/icons/basket.svg"></a>
+        </div>
+
+        <div class="main">
+            <a id="textrazion">Рацион на  каждый день</a>
+            <div class="frame">
+                <img class="imgframe" src="static/main/img/image12.png">
+                <a id="textnamexoz">Дмитрий</a>
+                <a id="textframe">С учетом нашего графика, мы не могли бы получить наш любимый корм без доствки на дом!</a>
+            </div>
+
+            <div class="frame1">
+                <img class="imgframe" src="static/main/img/image13.png">
+                <a id="textnamexoz">Мария</a>
+                <a id="textframe">Мы уверены, что корм этой компании - лучший выбор для наших животных. Восхитительное сочитание белков и витаминов</a>
+            </div>
+
+            <div class="frame2">
+                <img class="imgframe" src="static/main/img/image14.png">
+                <a id="textnamexoz">Александра</a>
+                <a id="textframe">Наш кот не мог наесться от других кормов, а корм этой компании устроил его с первого дня!</a>
+            </div>
+
+            <div class="frame3">
+                <img class="imgframe" src="static/main/img/image15.png">
+                <a id="textnamexoz">Сергей</a>
+                <a id="textframe">Очень ценю, что упаковка безопасна для моих питомцев, а также экологична для нашей планеты!</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
